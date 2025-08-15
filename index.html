@@ -8,6 +8,20 @@
   <!-- AdSense loader (add your client ID) -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4111921185596699" crossorigin="anonymous"></script>
 
+  <!-- cookie consent -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'analytics_storage': 'denied',
+      'functionality_storage': 'granted',
+      'security_storage': 'granted'
+    });
+  </script>
+  
+
+
   <style>
     :root {
       --primary: #0078d4;
@@ -158,6 +172,21 @@
          data-adtest="on"></ins>
   </div>
   <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+    <!-- ✅ Cookie Consent Banner -->
+  <div class="cookie-banner" id="cookieBanner">
+    <span>We use cookies for analytics and ads. Accept to help us improve.</span>
+    <button onclick="acceptCookies()">Accept</button>
+  </div>
+  <script>
+    function acceptCookies() {
+      gtag('consent', 'update', {
+        'ad_storage': 'granted',
+        'analytics_storage': 'granted'
+      });
+      document.getElementById('cookieBanner').style.display = 'none';
+    }
+  </script>
 
   <script>
     const upload = document.getElementById('upload');
