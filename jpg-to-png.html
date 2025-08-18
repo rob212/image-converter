@@ -3,27 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Free online PNG to JPG converter. Fast, secure, no upload needed. Convert images instantly in your browser.">
+  <meta name="description" content="Free online JPG to PNG converter. Fast, secure, no upload needed. Convert images instantly in your browser.">
+  <title>JPG to PNG Converter – Free & Fast</title>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;600;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <title>PNG to JPG Converter – Free & Fast</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>PNG to JPG Converter</h1>
-    <h2>Convert PNG to JPG online for free</h2>
+    <h1>JPG to PNG Converter</h1>
+    <h2>Convert JPG to PNG online for free</h2>
     <p>Fast, free, and private – all in your browser.</p>
   </header>
 
     <!-- Converter Navigation -->
   <nav class="nav-container">
     <div class="converter-tabs">
-      <a href="index.html" class="tab-link active">PNG → JPG</a>
-      <a href="jpg-to-png.html" class="tab-link">JPG → PNG</a>
+      <a href="index.html" class="tab-link">PNG → JPG</a>
+      <a href="jpg-to-png.html" class="tab-link active">JPG → PNG</a>
     </div>
   </nav>
 
-  <!-- Ad #1: responsive display (below header) -->
+   <!-- Ad #1: responsive display (below header) -->
   <div class="ad-container">
     <ins class="adsbygoogle"
          style="display:block"
@@ -35,34 +35,33 @@
   <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 
   <main class="card">
-    <input type="file" id="upload" accept="image/png" />
+    <input type="file" id="upload" accept="image/jpeg" />
 
-     <!-- Preview container -->
+    <!-- Preview container -->
     <div class="preview-container">
       <div class="preview-label" id="previewLabel" style="display:none;">Preview:</div>
       <canvas id="canvas"></canvas>
     </div>
 
-    <button id="convertBtn" disabled>Convert to JPG</button>
-    <a id="downloadLink" class="download-link" style="display:none;" download="converted.jpg">Download JPG</a>
-    <canvas id="canvas"></canvas>
+    <button id="convertBtn" disabled>Convert to PNG</button>
+    <a id="downloadLink" class="download-link" style="display:none;">Download PNG</a>
     <div class="notice">⚡ Your image never leaves your device – conversion happens locally.</div>
   </main>
 
   <section class="info-section">
-  <h3>Why Convert PNG to JPG?</h3>
+  <h3>Why Convert JPG to PNG?</h3>
   <div class="info-grid">
     <div class="info-item">
-      <strong>Smaller File Size</strong>
-      <p>JPG files are typically 50-80% smaller than PNG</p>
+      <strong>Lossless Quality</strong>
+      <p>PNG preserves image quality with no compression artifacts</p>
     </div>
     <div class="info-item">
-      <strong>Web Optimization</strong>
-      <p>Faster loading times for websites and emails</p>
+      <strong>Transparency Support</strong>
+      <p>Perfect for logos, graphics, and images with transparent backgrounds</p>
     </div>
     <div class="info-item">
-      <strong>Universal Support</strong>
-      <p>Compatible with all devices and platforms</p>
+      <strong>Better for Editing</strong>
+      <p>Ideal format for further image editing and professional use</p>
     </div>
   </div>
 </section>
@@ -79,14 +78,12 @@
   </div>
   <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 
-
-  <script src="converter.js"></script>
+   <script src="converter.js"></script>
   <script src="consent.js"></script>
   <script src="analytics.js"></script>
   <script src="adsense.js"></script>
-  
-    <script>
-    setupConverter({ inputMime: 'image/png', outputMime: 'image/jpeg', outputExt: 'jpg' });
+  <script>
+    setupConverter({ inputMime: 'image/jpeg', outputMime: 'image/png', outputExt: 'png' });
   </script>
 </body>
 </html>
