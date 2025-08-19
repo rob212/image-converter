@@ -1,9 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage (PNG → JPG) -->
   <url>
     <loc>https://easyimageconverter.com/</loc>
-    <lastmod>2025-08-16</lastmod>
+    <lastmod>2025-08-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <!-- JPG → PNG -->
+  <url>
+    <loc>https://easyimageconverter.com/jpg-to-png.html</loc>
+    <lastmod>2025-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- PNG → WebP -->
+  <url>
+    <loc>https://easyimageconverter.com/png-to-webp.html</loc>
+    <lastmod>2025-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
 </urlset>

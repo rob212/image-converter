@@ -3,24 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Free online PNG to JPG converter. Fast, secure, no upload needed. Convert images instantly in your browser.">
+  <meta name="description" content="Free online PNG to WebP converter. Fast, secure, no upload needed. Convert images instantly in your browser.">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;600;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <title>PNG to JPG Converter – Free & Fast</title>
+  <link rel="stylesheet" href="style.css" />
+  <title>PNG to WebP Converter – Free & Fast</title>
 </head>
 <body>
   <header>
-    <h1>PNG to JPG Converter</h1>
-    <h2>Convert PNG to JPG online for free</h2>
+    <h1>PNG to WebP Converter</h1>
+    <h2>Convert PNG to WebP online for free</h2>
     <p>Fast, free, and private – all in your browser.</p>
   </header>
 
-    <!-- Converter Navigation -->
-<div id="nav-placeholder"></div>
+  <!-- Converter Navigation -->
+ <div id="nav-placeholder"></div>
 
 
-
-  <!-- Ad #1: responsive display -->
+  <!-- Ad #1 -->
   <div class="ad-container">
     <ins class="adsbygoogle"
          style="display:block"
@@ -34,37 +33,36 @@
   <main class="card">
     <input type="file" id="upload" accept="image/png" />
 
-     <!-- Preview container -->
+    <!-- Preview container -->
     <div class="preview-container">
       <div class="preview-label" id="previewLabel" style="display:none;">Preview:</div>
       <canvas id="canvas"></canvas>
     </div>
 
-    <button id="convertBtn" disabled>Convert to JPG</button>
-    <a id="downloadLink" class="download-link" style="display:none;" download="converted.jpg">Download JPG</a>
-    <canvas id="canvas"></canvas>
+    <button id="convertBtn" disabled>Convert to WebP</button>
+    <a id="downloadLink" class="download-link" style="display:none;">Download WebP</a>
     <div class="notice">⚡ Your image never leaves your device – conversion happens locally.</div>
   </main>
 
   <section class="info-section">
-  <h3>Why Convert PNG to JPG?</h3>
-  <div class="info-grid">
-    <div class="info-item">
-      <strong>Smaller File Size</strong>
-      <p>JPG files are typically 50-80% smaller than PNG</p>
+    <h3>Why Convert PNG to WebP?</h3>
+    <div class="info-grid">
+      <div class="info-item">
+        <strong>Smaller File Size</strong>
+        <p>WebP images can be up to 30% smaller than PNGs with similar quality.</p>
+      </div>
+      <div class="info-item">
+        <strong>Modern Web Format</strong>
+        <p>WebP is optimized for modern browsers and faster website performance.</p>
+      </div>
+      <div class="info-item">
+        <strong>Transparency Support</strong>
+        <p>Like PNG, WebP also supports transparent backgrounds.</p>
+      </div>
     </div>
-    <div class="info-item">
-      <strong>Web Optimization</strong>
-      <p>Faster loading times for websites and emails</p>
-    </div>
-    <div class="info-item">
-      <strong>Universal Support</strong>
-      <p>Compatible with all devices and platforms</p>
-    </div>
-  </div>
-</section>
+  </section>
 
-  <!-- Ad #2: responsive display (below tool) -->
+  <!-- Ad #2 -->
   <div class="ad-container">
     <ins class="adsbygoogle"
          style="display:block"
@@ -75,14 +73,12 @@
   </div>
   <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 
-
   <script src="nav.js"></script>
   <script src="converter.js"></script>
   <script src="analytics.js"></script>
   <script src="adsense.js"></script>
-
-    <script>
-    setupConverter({ inputMime: 'image/png', outputMime: 'image/jpeg', outputExt: 'jpg' });
+  <script>
+    setupConverter({ inputMime: 'image/png', outputMime: 'image/webp', outputExt: 'webp' });
   </script>
 </body>
 </html>

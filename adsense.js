@@ -1,5 +1,3 @@
-// Create a new file called adsense.js with this content:
-
 function loadAdSense() {
   // Only load if not already loaded
   if (window.adsbygoogle) {

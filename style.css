@@ -64,20 +64,23 @@ header p {
 }
 
 .tab-link {
-  flex: 1;
+  padding: 0.5rem 1rem;
+  margin: 0 0.25rem;
   text-decoration: none;
-  padding: 0.8rem 1rem;
-  border-radius: 0.7rem;
   font-weight: 600;
-  text-align: center;
-  transition: all 0.2s ease;
-  font-size: 0.9rem;
+  color: #111;
+  border-radius: 0.5rem;
+  background: #eee;
+  transition: background 0.2s ease;
+}
+
+.tab-link:hover {
+  background: #ddd;
 }
 
 .tab-link.active {
-  background: #ff4d6d;
+  background: #ff4d6d; /* pink highlight */
   color: #fff;
-  box-shadow: 2px 2px 0 #000;
 }
 
 .tab-link:not(.active) {
