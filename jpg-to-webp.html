@@ -3,22 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Free online PNG to WebP converter. Fast, secure, no upload needed. Convert images instantly in your browser.">
+  <meta name="description" content="Free online JPG to WebP converter. Fast, secure, no upload needed. Convert images instantly in your browser.">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;600;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-  <title>PNG to WebP Converter – Free & Fast</title>
+  <title>JPG to WebP Converter – Free & Fast</title>
 </head>
 <body>
   <header>
-    <h1>PNG to WebP Converter</h1>
-    <h2>Convert PNG to WebP online for free</h2>
+    <h1>JPG to WebP Converter</h1>
+    <h2>Convert JPG to WebP online for free</h2>
     <p>Fast, free, and private – all in your browser.</p>
   </header>
 
-  <!-- Converter Navigation -->
+    <!-- Converter Navigation -->
  <div id="nav-placeholder"></div>
 
-  <!-- Ad #1 -->
+  <!-- Ad #1: responsive display (below header) -->
   <div class="ad-container">
     <ins class="adsbygoogle"
          style="display:block"
@@ -30,9 +30,9 @@
   <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 
   <main class="card">
-    <input type="file" id="upload" accept="image/png" />
+    <input type="file" id="upload" accept="image/jpeg" />
 
-    <!-- Preview container -->
+     <!-- Preview container -->
     <div class="preview-container">
       <div class="preview-label" id="previewLabel" style="display:none;">Preview:</div>
       <canvas id="canvas"></canvas>
@@ -44,24 +44,24 @@
   </main>
 
   <section class="info-section">
-    <h3>Why Convert PNG to WebP?</h3>
-    <div class="info-grid">
-      <div class="info-item">
-        <strong>Smaller File Size</strong>
-        <p>WebP images can be up to 30% smaller than PNGs with similar quality.</p>
-      </div>
-      <div class="info-item">
-        <strong>Modern Web Format</strong>
-        <p>WebP is optimized for modern browsers and faster website performance.</p>
-      </div>
-      <div class="info-item">
-        <strong>Transparency Support</strong>
-        <p>Like PNG, WebP also supports transparent backgrounds.</p>
-      </div>
+  <h3>Why Convert JPG to WebP?</h3>
+  <div class="info-grid">
+    <div class="info-item">
+      <strong>Better Compression</strong>
+      <p>WebP offers higher compression efficiency compared to JPG, often reducing file size by 25–35% while keeping the same visual quality.</p>
     </div>
-  </section>
+    <div class="info-item">
+      <strong>Supports Transparency</strong>
+      <p>Unlike JPG, WebP can include transparent backgrounds — making it more versatile for design and web use.</p>
+    </div>
+    <div class="info-item">
+      <strong>Modern Web Performance</strong>
+      <p>WebP is designed for the modern web, loading faster on websites and improving SEO by reducing page weight.</p>
+    </div>
+  </div>
+</section>
 
-  <!-- Ad #2 -->
+  <!-- Ad #2: responsive display (below tool) -->
   <div class="ad-container">
     <ins class="adsbygoogle"
          style="display:block"
@@ -74,10 +74,10 @@
 
   <script src="nav.js"></script>
   <script src="converter.js"></script>
+  <script src="consent.js"></script>
   <script src="analytics.js"></script>
-  <script src="adsense.js"></script>
   <script>
-    setupConverter({ inputMime: 'image/png', outputMime: 'image/webp', outputExt: 'webp' });
+    setupConverter({ inputMime: 'image/jpeg', outputMime: 'image/webp', outputExt: 'webp' });
   </script>
 </body>
 </html>
