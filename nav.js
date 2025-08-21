@@ -9,7 +9,11 @@ document.addEventListener("DOMContentLoaded", () => {
         placeholder.innerHTML = html;
 
         // Now highlight the active tab
-        const currentPage = window.location.pathname.split("/").pop();
+        let currentPage = window.location.pathname.split("/").pop();
+        if (currentPage === "" || currentPage === "/") {
+          currentPage = "index.html"; // Treat root as index.html
+        }
+
         document.querySelectorAll(".tab-link").forEach(link => {
           if (link.getAttribute("href") === currentPage) {
             link.classList.add("active");
