@@ -9,17 +9,17 @@ document.addEventListener("DOMContentLoaded", () => {
         placeholder.innerHTML = html;
 
         // Now highlight the active tab
-        let currentPage = window.location.pathname.split("/").pop();
-        if (currentPage === "" || currentPage === "/") {
-          currentPage = "index.html"; // Treat root as index.html
-        }
-
-        document.querySelectorAll(".tab-link").forEach(link => {
-          if (link.getAttribute("href") === currentPage) {
-            link.classList.add("active");
+        let currentPage = window.location.pathname;
+        if (currentPage === "/" || currentPage.endsWith("index.html")) {
+          document.querySelector('.tab-link[href="/"]').classList.add("active");
+        } else {
+          document.querySelectorAll(".tab-link").forEach(link => {
+          if (link.getAttribute("href") === currentPage.split("/").pop()) {
+          link.classList.add("active");
           }
         });
-      })
-      .catch(err => console.error("Error loading nav:", err));
+      }
+       })
+       .catch(err => console.error("Error loading nav:", err));
   }
 });
